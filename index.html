@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>유종헌 — 웹 명함</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-pattern" aria-hidden="true"></div>
+  <main class="card-wrap">
+    <article class="card" id="card">
+      <div class="card__visual">
+        <div class="card__avatar" role="img" aria-label="캐릭터 프로필 일러스트">
+          <svg class="character" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <!-- 헤어 -->
+            <path class="hair" d="M52 118c-8-42 12-78 48-88 36-10 72 14 76 52 4 38-8 58-20 68-4-24-16-44-36-52-28-12-52-4-68 20z" />
+            <path class="hair-shade" d="M100 38c28 0 52 18 60 46-8-28-32-46-60-46s-52 18-60 46c8-28 32-46 60-46z" opacity=".25" />
+            <!-- 귀 -->
+            <ellipse class="ear" cx="44" cy="128" rx="10" ry="14" />
+            <ellipse class="ear" cx="156" cy="128" rx="10" ry="14" />
+            <!-- 얼굴 -->
+            <ellipse class="face" cx="100" cy="125" rx="58" ry="62" />
+            <!-- 뺨 -->
+            <ellipse class="cheek" cx="62" cy="138" rx="12" ry="8" opacity=".35" />
+            <ellipse class="cheek" cx="138" cy="138" rx="12" ry="8" opacity=".35" />
+            <!-- 눈 -->
+            <ellipse class="eye" cx="76" cy="118" rx="8" ry="10" />
+            <ellipse class="eye" cx="124" cy="118" rx="8" ry="10" />
+            <circle class="eye-light" cx="78" cy="116" r="3" />
+            <circle class="eye-light" cx="126" cy="116" r="3" />
+            <!-- 안경 -->
+            <g class="glasses" stroke-width="2.5" stroke-linecap="round">
+              <rect x="58" y="108" width="32" height="22" rx="6" />
+              <rect x="110" y="108" width="32" height="22" rx="6" />
+              <line x1="90" y1="119" x2="110" y2="119" />
+              <line x1="58" y1="115" x2="48" y2="112" />
+              <line x1="142" y1="115" x2="152" y2="112" />
+            </g>
+            <!-- 코 -->
+            <path class="nose" d="M100 128c2 6 4 10 2 12" fill="none" stroke-linecap="round" stroke-width="2" />
+            <!-- 입 -->
+            <path class="mouth" d="M82 152c10 10 26 10 36 0" stroke-linecap="round" stroke-width="3" />
+            <!-- 셔츠 & 넥타이 -->
+            <path class="shirt" d="M40 200c0-40 20-52 60-52s60 12 60 52v20H40v-20z" />
+            <path class="collar-l" d="M70 148L100 168 85 175z" />
+            <path class="collar-r" d="M130 148L100 168 115 175z" />
+            <path class="tie" d="M100 168l8 52H92l8-52z" />
+            <path class="tie-knot" d="M94 160h12l-3 12h-6l-3-12z" />
+          </svg>
+        </div>
+        <p class="card__badge">Web Card</p>
+      </div>
+      <div class="card__body">
+        <h1 class="card__name">유종헌</h1>
+        <p class="card__title">HL인재개발원 부원장</p>
+        <p class="card__tagline">사람과 조직이 함께 성장하는 학습 문화를 만듭니다.</p>
+        <ul class="card__contacts">
+          <li>
+            <a class="contact-link" href="mailto:jh.yoo@hlcompany.com">
+              <span class="contact-icon" aria-hidden="true">✉</span>
+              <span>jh.yoo@hlcompany.com</span>
+            </a>
+          </li>
+          <li>
+            <a class="contact-link" href="tel:01062384978">
+              <span class="contact-icon" aria-hidden="true">☎</span>
+              <span>010-6238-4978</span>
+            </a>
+          </li>
+        </ul>
+        <a
+          class="btn-linkedin"
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="btn-linkedin__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              fill="currentColor"
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+            />
+          </svg>
+          <span class="btn-linkedin__label">LinkedIn</span>
+        </a>
+      </div>
+    </article>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
